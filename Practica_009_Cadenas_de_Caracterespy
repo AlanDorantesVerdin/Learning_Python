@@ -1,0 +1,139 @@
+""" Practica 9: Cadenas de caracteres """
+# Autor: Alan
+# Fecha: 2024-10-05
+
+# 1. Concatenación básica
+print("1. Concatenación básica:")
+
+# Se escriben dos fragmentos de una frase en dos variables
+fragmento1 = "La programación es como la vida:"
+fragmento2 = "llena de errores, pero también de posibilidades."
+
+# Se concatenan las dos variables con + y se forma la frase completa pero sin espacio
+frase_completa = fragmento1 + fragmento2
+print(frase_completa) 
+print()
+
+# 2. Concatenación con espacio en 2ª cadena
+print("2. Concatenación con espacio:")
+
+# Se añaden espacios manualmente en la segunda cadena
+fragmento1 = "La programación es como la vida:"
+fragmento2 = " llena de errores, pero también de posibilidades."
+
+# Se concatenan las dos variables con + y se forma la frase completa con espacio
+frase_completa = fragmento1 + fragmento2
+print(frase_completa)
+print()
+
+# 3. Concatenación usando tercera cadena
+print("3. Concatenación usando una tercera cadena para espacio:")
+
+# Se escriben los dos fragmentos de la frase sin espacios
+fragmento1 = "La programación es como la vida:"
+fragmento2 = "llena de errores, pero también de posibilidades."
+
+# Se utiliza una tercera cadena para añadir el espacio
+frase_completa = fragmento1 + " " + fragmento2
+print(frase_completa)
+print()
+
+# 4. print() con literales concatenados
+print("4. Literales concatenados con + :")
+
+# La concatenación también funciona directamente en print()
+print("Hola" + " " + "Mundo")
+print()
+
+# 5. Alternar comillas (dobles dentro de cadena)
+print("5. Alternar comillas (dobles dentro):")
+
+# Usar comillas simples para la cadena permite usar comillas dobles
+# Si se usaran las mismas comillas dentro de la cadena, se produce un error
+print('"El tiempo es oro", me dijo.')
+print()
+
+# 6. Alternar comillas (simples dentro de cadena)
+print("6. Alternar comillas (simples dentro):")
+
+# Usar comillas dobles para la cadena permite usar comillas simples dentro
+print("'El tiempo es oro', me dijo.")
+print()
+
+# 7. Escape: comillas dobles escapadas
+print("7. Escape de comillas dobles:")
+
+# Usar el carácter de escape \ permite usar las mismas comillas dobles dentro de la cadena
+print("\"El tiempo es oro\", me dijo.")
+print()
+
+# 8. Escape: comillas simples escapadas
+print("8. Escape de comillas simples:")
+
+# Usar el carácter de escape \ permite usar las mismas comillas simples dentro de la cadena
+print('\'El tiempo es oro\', me dijo.')
+print()
+
+# 9. Formateo con f-strings
+print("9. Formateo con f-strings:")
+
+# Se usa una f antes de las comillas para indicar que es un f-string
+nombre2 = input("Por favor, introduzca su nombre:\n") # Se pide el nombre al usuario
+print(f"Hola, {nombre2}. Tenga un maravilloso día.") # Se usa la variable dentro del f-string
+print()
+
+# 10. Concatenación vs f-strings
+print("10. Concatenación vs f-strings:")
+
+# Concatenación tradicional con +, solo funciona con cadenas
+nombre3 = input("Por favor, introduzca su nombre:\n") # Se pide el nombre al usuario
+print("Hola, " + nombre3 + ". Tenga un maravilloso día.") # Se concatena la cadena con la variable
+print()
+
+# 11. Expresiones dentro de f-strings
+print("11. Expresiones dentro de f-strings:")
+
+# Se pueden usar expresiones dentro de las llaves {} como la suma de números
+a = 10
+b = 30
+resultado = f"La suma de {a} + {b} es: {a + b}" # Se suman los números dentro del f-string
+print(resultado)
+print()
+
+# NOTA:Como llamar un metodo
+# objeto.nombre_metodo()
+
+# 12. Método capitalize()
+print("12. Método capitalize():")
+
+# Convierte el primer carácter a mayúscula y el resto a minúscula
+frase = "la imaginación es el principio de la creación."
+frase_convertida = frase.capitalize()
+print(frase_convertida)
+print()
+
+# 13. Entrada + capitalize()
+print("13. Entrada de datos con capitalize():")
+
+# Se puede aplicar el método capitalize() directamente a una cadena de entrada
+nombre = input("Introduzca su nombre:\n") # Se pide el nombre al usuario
+nombre_convertido = nombre.capitalize() # Se convierte la primera letra a mayúscula
+print(f"Hola {nombre_convertido}.")
+print()
+
+# 14. Método upper()
+print("14. Método upper():")
+
+# Convierte todos los caracteres a mayúsculas
+frase = "la imaginación es el principio de la creación."
+frase_convertida = frase.upper()
+print(frase_convertida)
+print()
+
+# 15. Método lower()
+print("15. Método lower():")
+
+# Convierte todos los caracteres a minúsculas
+frase = "lA imAgiNAción ES el pRincipiO de LA CREAción."
+frase_convertida = frase.lower()
+print(frase_convertida)
